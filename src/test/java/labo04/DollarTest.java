@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MultiplicationTest {
+public class DollarTest {
 
   @Test
   public void testMultiplication() {
@@ -13,6 +13,11 @@ public class MultiplicationTest {
     assertEquals(10, product.amount);
     product = five.times(3);
     assertEquals(15, product.amount);
+  }
+
+  @Test
+  public void testEquality() {
+    assertEquals(new Dollar(5), new Dollar(5));
   }
 
 }
