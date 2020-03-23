@@ -20,5 +20,16 @@ public class Bank {
       this.from = from;
       this.to = to;
     }
+
+    @Override
+    public boolean equals(final Object other) {
+      Pair pair = (Pair) other;
+      return from.equals(pair.from) && to.equals(pair.to);
+    }
+
+    @Override
+    public int hashCode() {
+      return 0;
+    }
   }
 }
