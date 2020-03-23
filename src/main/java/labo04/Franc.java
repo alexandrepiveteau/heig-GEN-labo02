@@ -1,6 +1,6 @@
 package labo04;
 
-public class Franc {
+public class Franc extends Money {
 
   private int amount;
 
@@ -16,5 +16,4 @@ public class Franc {
     Franc Franc = (Franc) other;
     return amount == Franc.amount;
   }
-
 }
