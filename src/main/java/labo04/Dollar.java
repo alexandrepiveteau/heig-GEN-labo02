@@ -3,8 +3,7 @@ package labo04;
 public class Dollar extends Money {
 
   public Dollar(int amount, String currency) {
-    this.amount = amount;
-    this.currency = currency;
+    super(amount, currency);
   }
 
   public Money times(int multiplier) {
