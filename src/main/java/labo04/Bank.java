@@ -1,6 +1,10 @@
 package labo04;
 
+import java.util.Hashtable;
+
 public class Bank {
+
+  private Hashtable<Pair, Integer> rates = new Hashtable<>();
 
   public void addRate(String from, String to, int rate) {}
 
