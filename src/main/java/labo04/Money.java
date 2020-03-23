@@ -1,6 +1,6 @@
 package labo04;
 
-public abstract class Money {
+public class Money {
   protected int amount;
   protected String currency;
 
@@ -21,10 +21,17 @@ public abstract class Money {
     return currency;
   }
 
-  abstract Money times(int amount);
+  public Money times(int amount) {
+    return null;
+  }
 
   public boolean equals(Object other) {
     Money money = (Money) other;
     return amount == money.amount && getClass().equals(money.getClass());
+  }
+
+  @Override
+  public String toString() {
+    return amount + " " + currency;
   }
 }
