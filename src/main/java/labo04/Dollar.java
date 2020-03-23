@@ -11,7 +11,7 @@ public class Dollar extends Money {
   }
 
   public boolean equals(Object other) {
-    Money dollar = (Money) other;
-    return amount == dollar.amount;
+    Money money = (Money) other;
+    return amount == money.amount;
   }
 }
