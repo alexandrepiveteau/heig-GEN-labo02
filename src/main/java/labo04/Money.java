@@ -29,6 +29,10 @@ public class Money implements Expression {
     return new Money(amount * multiplier, currency);
   }
 
+  public Money reduce(String to) {
+    return this;
+  }
+
   public boolean equals(Object other) {
     Money money = (Money) other;
     return amount == money.amount && currency().equals(money.currency());
