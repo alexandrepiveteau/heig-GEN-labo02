@@ -27,7 +27,7 @@ public class Money {
 
   public boolean equals(Object other) {
     Money money = (Money) other;
-    return amount == money.amount && getClass().equals(money.getClass());
+    return amount == money.amount && currency().equals(money.currency());
   }
 
   @Override
