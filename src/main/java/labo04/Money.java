@@ -1,11 +1,13 @@
 package labo04;
 
-public class Money {
+public abstract class Money {
   protected int amount;
 
   public static Dollar dollar(int amount) {
     return new Dollar(amount);
   }
+
+  abstract Money times(int amount);
 
   public boolean equals(Object other) {
     Money money = (Money) other;
