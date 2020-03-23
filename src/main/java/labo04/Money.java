@@ -11,6 +11,8 @@ public abstract class Money {
     return new Franc(amount);
   }
 
+  abstract String currency();
+
   abstract Money times(int amount);
 
   public boolean equals(Object other) {
