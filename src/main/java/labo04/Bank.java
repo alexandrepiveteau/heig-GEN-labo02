@@ -11,4 +11,14 @@ public class Bank {
   public Money reduce(Expression source, String to) {
     return source.reduce(this, to);
   }
+
+  private class Pair {
+    private String from;
+    private String to;
+
+    private Pair(String from, String to) {
+      this.from = from;
+      this.to = to;
+    }
+  }
 }
